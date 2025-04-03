@@ -53,6 +53,28 @@ Set the clients DNS settings to point to dc-1's Private IP Address.
 
 ![image](https://github.com/user-attachments/assets/9803e958-a005-44c0-89ee-db1b88e430c5)
 
+Remote into dc-1 using the username and password you chose when making the VM.
+
+![image](https://github.com/user-attachments/assets/5b5dd756-31d6-4c64-b194-4af2fdcbaad1)
+
+Next open Windows Firewall Settings. (You can type "wf.msc" in run to open it.) Inside the Firewall Settings, we're going to enable ICMP. </p>
+Alternatively, for testing purposes you could disable the Firewall. However, this isn't recommended to do in real life.
+
+![image](https://github.com/user-attachments/assets/d88fa59a-3cb8-4ef4-be4e-16aeff715237)
+
+Next remote into client-1 using the username and pass you chose when creating the VM.
+
+![image](https://github.com/user-attachments/assets/6e3b6723-21f8-47e6-a040-85d9ff176582)
+
+Open CMD, and ping dc-1's private IP Address to ensure connection. 
+
+![image](https://github.com/user-attachments/assets/a35c2f3a-2074-4167-8a99-7a4eccaef99f)
+
+
+
+
+
+
 
 
 
