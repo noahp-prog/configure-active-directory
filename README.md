@@ -84,12 +84,23 @@ We're going to add a new forest, and choose a root domain name. It can be anythi
 
 ![image](https://github.com/user-attachments/assets/f7423671-178d-42d6-84bf-b1a16f140866)
 
-After installation, our server is going to restart. From now on we'll be logging in with our domain name. </p>
+After installation, our server is going to restart. Login with your domain./p>
 In my case, "lothlorien.com\labuser".
 
 ![image](https://github.com/user-attachments/assets/77f2b73e-d9fb-4f38-9d59-cd662bdb4c63)
 
+After logging in, we need to open Active Directory Users and Computers (ADUC). Add an Organization Unit (OU), name it "**_EMPLOYEES**". Then create another and name it "**_ADMINS**".
 
+![image](https://github.com/user-attachments/assets/5bf4f244-d792-4c87-9d40-6c9d36519a72)
+
+![image](https://github.com/user-attachments/assets/b683e33b-d12f-44c3-850d-3aa81dba6ae7)
+
+Now create a user in the admins folder, name it something you'll remember. This is going to be our admin account. </p>
+For testing purposes, I chose to have a password that never expires. This is bad to do in real life.
+
+![image](https://github.com/user-attachments/assets/e025d2f0-8322-4787-9f65-d0b572d94066)
+
+![image](https://github.com/user-attachments/assets/ef8b2b4c-ca69-4eff-889f-82afebec7ec3)
 
 
 
