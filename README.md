@@ -20,7 +20,7 @@ This guide outlines the implementation of on-premises Active Directory within Az
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Create Resources
-- Ensure Connectivity between Client and Domain Controller
+- Ensure Connectivity between Client-1 and Domain Controller
 - Install Active Directory
 - Create an Admin and Normal User Account in AD
 - Join Client-1 to your domain
@@ -58,6 +58,7 @@ Remote into dc-1 using the username and password you chose when making the VM.
 ![image](https://github.com/user-attachments/assets/5b5dd756-31d6-4c64-b194-4af2fdcbaad1)
 
 Next open Windows Firewall Settings. (You can type "wf.msc" in run to open it.) Inside the Firewall Settings, we're going to enable ICMPv4. </p>
+
 Alternatively, for testing purposes you could disable the Firewall. However, this isn't recommended to do in real life.
 
 ![image](https://github.com/user-attachments/assets/d88fa59a-3cb8-4ef4-be4e-16aeff715237)
@@ -84,7 +85,8 @@ We're going to add a new forest, and choose a root domain name. It can be anythi
 
 ![image](https://github.com/user-attachments/assets/f7423671-178d-42d6-84bf-b1a16f140866)
 
-After installation, our server is going to restart. Login with your domain./p>
+After installation, our server is going to restart. Login with your domain.</p>
+
 In my case, "lothlorien.com\labuser".
 
 ![image](https://github.com/user-attachments/assets/77f2b73e-d9fb-4f38-9d59-cd662bdb4c63)
@@ -96,11 +98,57 @@ After logging in, we need to open Active Directory Users and Computers (ADUC). A
 ![image](https://github.com/user-attachments/assets/b683e33b-d12f-44c3-850d-3aa81dba6ae7)
 
 Now create a user in the admins folder, name it something you'll remember. This is going to be our admin account. </p>
+
 For testing purposes, I chose to have a password that never expires. This is bad to do in real life.
 
 ![image](https://github.com/user-attachments/assets/e025d2f0-8322-4787-9f65-d0b572d94066)
 
 ![image](https://github.com/user-attachments/assets/ef8b2b4c-ca69-4eff-889f-82afebec7ec3)
+
+Make "Ryan Doe" a member of the Domain Admins Security Group.
+
+![image](https://github.com/user-attachments/assets/3add6b99-b8ac-4661-9281-6ca70601110d)
+
+Logout of dc-1, and from now on, login using the admin account you created.</p>
+
+In my case, "ryan_admin".
+
+![image](https://github.com/user-attachments/assets/49b6ba21-b1ec-4803-8df8-96e8d43f4986)
+
+# Joining the Domain </h2>
+
+Log into client-1 using the original local admin account, and join the domain.
+
+![image](https://github.com/user-attachments/assets/efc92937-bb93-475e-a37c-f3c1885d0ceb)
+
+![image](https://github.com/user-attachments/assets/d8e9b91f-4ca4-4a8b-bafc-cc6ed23b9083)
+
+Now back inside of dc-1, verify that client-1 shows up in your forest under the computers container.
+
+![image](https://github.com/user-attachments/assets/a84ca318-bcb6-4602-8962-bcb972225699)
+
+For organizational purposes, create a new OU and name it "**_CLIENTS**", then drag client-1 into that OU.
+
+![image](https://github.com/user-attachments/assets/cd51e03c-7819-4323-bbee-9fc6286b6320)
+
+# Setup Remote Desktop for Non-admin users on client-1</h2>
+
+Log into client-1 as "ryan_admin" and open system properties.</p>
+
+Click "Remote Desktop", allow "Domain Users" access.
+
+We're now able to login as normal, non-admin users now.
+
+# Creating Users using Powershell</h2>
+
+
+
+
+
+
+
+
+
 
 
 
