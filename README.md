@@ -149,6 +149,23 @@ Create a new file, and paste the contents of [this script.](https://github.com/n
 
 ![image](https://github.com/user-attachments/assets/1b5d394d-5e42-427e-8f74-c0fb648df93f)
 
+Run the script and observe the user accounts being created.
+
+![image](https://github.com/user-attachments/assets/f059c89b-8f83-4d97-9cef-c955bc9983da)
+
+Back in ADUC, check the "_EMPLOYEES" folder and observe the accounts. Pick an account and attempt to login to client-1 using the account.</p>
+
+The password is located in the script on line 2.
+
+![image](https://github.com/user-attachments/assets/8f1919cd-fdab-411e-a8bb-91fb60d6bd53)
+
+![image](https://github.com/user-attachments/assets/31900408-fa7c-4f62-a602-4161100fe800)
+
+If everything is done correctly, you should be able to login with the user account that you chose.</p>
+
+![image](https://github.com/user-attachments/assets/6a93314e-0a78-4c2f-9938-434ba7de1437)
+
+Congrats! You've succesfully set up an AD test enviroment! I recommend experimenting with Group Policy and getting familiar using it, as it's very important in any Help Desk/ It Support role.</p>
 
 
 
