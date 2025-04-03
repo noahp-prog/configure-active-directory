@@ -57,7 +57,7 @@ Remote into dc-1 using the username and password you chose when making the VM.
 
 ![image](https://github.com/user-attachments/assets/5b5dd756-31d6-4c64-b194-4af2fdcbaad1)
 
-Next open Windows Firewall Settings. (You can type "wf.msc" in run to open it.) Inside the Firewall Settings, we're going to enable ICMP. </p>
+Next open Windows Firewall Settings. (You can type "wf.msc" in run to open it.) Inside the Firewall Settings, we're going to enable ICMPv4. </p>
 Alternatively, for testing purposes you could disable the Firewall. However, this isn't recommended to do in real life.
 
 ![image](https://github.com/user-attachments/assets/d88fa59a-3cb8-4ef4-be4e-16aeff715237)
@@ -69,6 +69,31 @@ Next remote into client-1 using the username and pass you chose when creating th
 Open CMD, and ping dc-1's private IP Address to ensure connection. 
 
 ![image](https://github.com/user-attachments/assets/a35c2f3a-2074-4167-8a99-7a4eccaef99f)
+
+# Installing Active Directory </h2>
+
+Log into dc-1, and install Active Directory Domain Services (ADDS). 
+
+![image](https://github.com/user-attachments/assets/7ab06228-7e90-4032-9ba4-023144bd3859)
+
+After ADDS has been installed, we're going to promte the server to a Domain Controller.
+
+![image](https://github.com/user-attachments/assets/e6001a0a-7838-4d14-9481-7ad7b518bb80)
+
+We're going to add a new forest, and choose a root domain name. It can be anything as long as you'll remember it.
+
+![image](https://github.com/user-attachments/assets/f7423671-178d-42d6-84bf-b1a16f140866)
+
+After installation, our server is going to restart. From now on we'll be logging in with our domain name. </p>
+In my case, "lothlorien.com\labuser".
+
+![image](https://github.com/user-attachments/assets/77f2b73e-d9fb-4f38-9d59-cd662bdb4c63)
+
+
+
+
+
+
 
 
 
