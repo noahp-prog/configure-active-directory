@@ -163,9 +163,9 @@ The password is located in the script on line 2.
 
 If everything is done correctly, you should be able to login with the user account that you chose.</p>
 
-![image](https://github.com/user-attachments/assets/6a93314e-0a78-4c2f-9938-434ba7de1437)
+![image](https://github.com/user-attachments/assets/e7a4d651-d307-4265-8336-f00dbf32c3b1)
 
-Congrats! You've succesfully set up an AD test enviroment! I recommend experimenting with Group Policy and getting familiar using it, as it's very important in any Help Desk/ It Support role.</p>
+Congrats! You've succesfully set up an AD test enviroment!I hope this guide was able to help you in learning about ADDS. I recommend experimenting with Group Policy and getting familiar using it, as it's very important in any Help Desk/ IT Support role.
 
 
 
