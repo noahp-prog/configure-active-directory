@@ -139,7 +139,15 @@ Click "Remote Desktop", allow "Domain Users" access.
 
 We're now able to login as normal, non-admin users now.
 
+![image](https://github.com/user-attachments/assets/60b10384-5f97-4b12-aef4-fb66683d8c2d)
+
 # Creating Users using Powershell</h2>
+
+Using our admin account in dc-1, open Powershell_ise as an admin.</p>
+
+Create a new file, and paste the contents of [this script.](https://github.com/noahp-prog/configure-active-directory/blob/main/ad-script)
+
+![image](https://github.com/user-attachments/assets/1b5d394d-5e42-427e-8f74-c0fb648df93f)
 
 
 
