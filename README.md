@@ -45,6 +45,18 @@ Now create the client vm. Name it "**client-1**". Select "**Windows 10 Pro**".
 
 ![image](https://github.com/user-attachments/assets/43296530-1929-42ac-b7fb-ad3e035c2009)
 
+Set the Domain Controllers NIC Private IP to be static.
+
+![image](https://github.com/user-attachments/assets/1daa691e-e6b2-425e-b9a8-057181919973)
+
+Set the clients DNS settings to point to dc-1's Private IP Address.
+
+![image](https://github.com/user-attachments/assets/9803e958-a005-44c0-89ee-db1b88e430c5)
+
+
+
+
+
 
 
 
