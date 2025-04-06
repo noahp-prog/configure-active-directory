@@ -37,11 +37,11 @@ We're then going to create a Virtual Network (VNet) inside that resource group.
 
 ![image](https://github.com/user-attachments/assets/0833969b-12cd-49b8-a2d2-36d672a6986e)
 
-Now we'll create our Domain Controller. Name it "**dc-1**". When creating, make sure to select "**Windows Server 2022**".
+Now we'll create our Domain Controller. Name it "**dc-1**." When creating, make sure to select "**Windows Server 2022**."
 
 ![image](https://github.com/user-attachments/assets/11912d0a-48c9-4d9f-9de9-62c2598ffff6)
 
-Now create the client vm. Name it "**client-1**". Select "**Windows 10 Pro**".
+Now create the client vm. Name it "**client-1**." Select "**Windows 10 Pro**"
 
 ![image](https://github.com/user-attachments/assets/43296530-1929-42ac-b7fb-ad3e035c2009)
 
@@ -87,11 +87,11 @@ We're going to add a new forest, and choose a root domain name. It can be anythi
 
 After installation, our server is going to restart. Login with your domain.</p>
 
-In my case, "lothlorien.com\labuser".
+In my case, "lothlorien.com\labuser"
 
 ![image](https://github.com/user-attachments/assets/77f2b73e-d9fb-4f38-9d59-cd662bdb4c63)
 
-After logging in, we need to open Active Directory Users and Computers (ADUC). Add an Organization Unit (OU), name it "**_EMPLOYEES**". Then create another and name it "**_ADMINS**".
+After logging in, we need to open Active Directory Users and Computers (ADUC). Add an Organization Unit (OU), name it "**_EMPLOYEES**." Then create another and name it "**_ADMINS**."
 
 ![image](https://github.com/user-attachments/assets/5bf4f244-d792-4c87-9d40-6c9d36519a72)
 
@@ -111,7 +111,7 @@ Make "Ryan Doe" a member of the Domain Admins Security Group.
 
 Logout of dc-1, and from now on, login using the admin account you created.</p>
 
-In my case, "ryan_admin".
+In my case, "ryan_admin"
 
 ![image](https://github.com/user-attachments/assets/49b6ba21-b1ec-4803-8df8-96e8d43f4986)
 
@@ -165,7 +165,7 @@ If everything is done correctly, you should be able to login with the user accou
 
 ![image](https://github.com/user-attachments/assets/e7a4d651-d307-4265-8336-f00dbf32c3b1)
 
-Congrats! You've succesfully set up an AD test enviroment!I hope this guide was able to help you in learning about ADDS. I recommend experimenting with Group Policy and getting familiar using it, as it's very important in any Help Desk/ IT Support role.
+Congrats! You've succesfully set up an AD test enviroment!I hope this guide was able to help you in learning about ADDS. In the next guide, I'll show you two simple use cases of Group Policy with Active Directory to help your understanding of ADDS and Group Policy. 
 
 
 
